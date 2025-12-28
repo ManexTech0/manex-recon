@@ -1,0 +1,5 @@
+{
+  "name": "Manex Recon",
+  "description": "A high-end cyberpunk OSINT reconnaissance dashboard using Gemini AI to analyze domains and IPs.",
+  "requestFramePermissions": []
+}
