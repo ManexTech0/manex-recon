@@ -4,7 +4,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   define: {
-    'process.env.API_KEY': JSON.stringify(process.env.API_KEY),
+    // If process.env.API_KEY is undefined, default to an empty string to prevent build issues.
+    // The app will check for the key at runtime.
+    'process.env.API_KEY': JSON.stringify(process.env.API_KEY || ""),
     'process.env': {} 
   }
 });
